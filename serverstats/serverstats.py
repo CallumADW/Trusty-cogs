@@ -1287,7 +1287,7 @@ class ServerStats(commands.Cog):
     @commands.command()
     @commands.guild_only()
     @checks.mod_or_permissions(manage_messages=True)
-    async def nummembers(self, ctx: commands.Context, *, guild: GuildConverter = None) -> None:
+    async def members(self, ctx: commands.Context, *, guild: GuildConverter = None) -> None:
         """
         Display number of users on a server
 
